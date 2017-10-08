@@ -10,7 +10,7 @@ Opinionated stacks of ready-to-run Jupyter applications in Docker.
 If you're familiar with Docker, have it configured, and know exactly what you'd like to run, this one-liner should work in most cases:
 
 ```bash
-docker run -p 8888:8888 us.gcr.io/echoparklabs/tensorflow-notebook:latest
+docker run -p 8888:8888 jupyter/tensorflow-notebook:latest
 ```
 
 ## Getting Started
