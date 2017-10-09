@@ -9,7 +9,7 @@ Opinionated stacks of ready-to-run Jupyter applications in Docker.
 
 If you're familiar with Docker, have it configured, and know exactly what you'd like to run, this one-liner should work in most cases. For the mac use the `-p 8888:8888` in order to map the port to the local host, got the idea from [this post](https://forums.docker.com/t/using-localhost-for-to-access-running-container/3148/4).
 
-```
+```bash
 docker run -p 8888:8888 us.gcr.io/echoparklabs/<your desired stack>:<git-sha-tag>
 ```
 
