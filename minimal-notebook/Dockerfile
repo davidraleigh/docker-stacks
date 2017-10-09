@@ -1,7 +1,7 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
 
-FROM jupyter/base-notebook
+FROM us.gcr.io/echoparklabs/base-notebook
 
 MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 

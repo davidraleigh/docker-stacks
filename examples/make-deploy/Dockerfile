@@ -2,7 +2,7 @@
 # Distributed under the terms of the Modified BSD License.
 
 # Pick your favorite docker-stacks image
-FROM jupyter/minimal-notebook:2d125a7161b5
+FROM us.gcr.io/echoparklabs/minimal-notebook:2d125a7161b5
 
 USER jovyan
 

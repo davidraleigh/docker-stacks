@@ -40,7 +40,7 @@ notebook/down.sh
 You can customize the docker-stack notebook image to deploy by modifying the `notebook/Dockerfile`.  For example, you can build and deploy a `jupyter/all-spark-notebook` by modifying the Dockerfile like so:
 
 ```
-FROM jupyter/all-spark-notebook:55d5ca6be183
+FROM us.gcr.io/echoparklabs/all-spark-notebook:55d5ca6be183
 ...
 ```
 

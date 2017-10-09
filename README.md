@@ -7,10 +7,10 @@ Opinionated stacks of ready-to-run Jupyter applications in Docker.
 
 ## Quick Start
 
-If you're familiar with Docker, have it configured, and know exactly what you'd like to run, this one-liner should work in most cases:
+If you're familiar with Docker, have it configured, and know exactly what you'd like to run, this one-liner should work in most cases. For the mac use the `-p 8888:8888` in order to map the port to the local host, got the idea from [this post](https://forums.docker.com/t/using-localhost-for-to-access-running-container/3148/4).
 
 ```
-docker run -d -P jupyter/<your desired stack>:<git-sha-tag>
+docker run -p 8888:8888 us.gcr.io/echoparklabs/<your desired stack>:<git-sha-tag>
 ```
 
 ## Getting Started
@@ -41,7 +41,7 @@ Starting with [git commit SHA 9bd33dcc8688](https://github.com/jupyter/docker-st
 
 ## Other Tips and Known Issues
 
-- If you haven't already, pin your image to a tag, e.g. `FROM jupyter/scipy-notebook:7c45ec67c8e7`.
+- If you haven't already, pin your image to a tag, e.g. `FROM us.gcr.io/echoparklabs/scipy-notebook:7c45ec67c8e7`.
   `latest` is a moving target which can change in backward-incompatible ways as packages and operating systems are updated.
 * Python 2.x was [removed from all images](https://github.com/jupyter/docker-stacks/pull/433) on August 10th, 2017, starting in tag `cc9feab481f7`. If you wish to continue using Python 2.x, pin to tag `82b978b3ceeb`.
 * `tini -- start-notebook.sh` is the default Docker entrypoint-plus-command in every notebook stack. If you plan to modify it in any way, be sure to check the *Notebook Options* section of your stack's README to understand the consequences.

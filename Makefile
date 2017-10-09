@@ -6,7 +6,7 @@
 # Use bash for inline if-statements in test target
 SHELL:=bash
 
-OWNER:=jupyter
+OWNER:=us.gcr.io/echoparklabs
 # need to list these manually because there's a dependency tree
 ARCH:=$(shell uname -m)
 
@@ -31,7 +31,7 @@ RETRIES:=10
 
 help:
 # http://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
-	@echo "jupyter/docker-stacks"
+	@echo "us.gcr.io/echoparklabs/docker-stacks"
 	@echo "====================="
 	@echo "Replace % with a stack directory name (e.g., make build/minimal-notebook)"
 	@echo

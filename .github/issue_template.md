@@ -6,11 +6,11 @@ If you are reporting an issue with one of the existing images, please answer the
 
 **What docker image you are using?**
 
-Example: `jupyter/scipy-notebook`
+Example: `us.gcr.io/echoparklabs/scipy-notebook`
 
 **What complete docker command do you run to launch the container (omitting sensitive values)?**
 
-Example: `docker run -it --rm -p 8889:8888 jupyter/all-spark-notebook:latest`
+Example: `docker run -it --rm -p 8889:8888 us.gcr.io/echoparklabs/all-spark-notebook:latest`
 
 **What steps do you take once the container is running to reproduce the issue?**
 
